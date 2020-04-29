@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <button>click1</button><br>
@@ -33,5 +39,18 @@
       })();
     })();
   </script>
+  <!-- GrowingIO Analytics code version 2.1 -->
+<!-- Copyright 2015-2020 GrowingIO, Inc. More info available at http://www.growingio.com -->
+<script type='text/javascript'>
+  !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+    gio('init', 'bffe039b837981d1', {});
+    gio('send');
+    window.addEventListener('scroll', (e) => {
+      if(window.pageYOffset + window.innerHeight === document.body.offsetHeight) {
+        gio('track', 'overview', {location: location.href});
+      }
+    })
+  </script>
+  <!-- End GrowingIO Analytics code version: 2.1 -->
 </body>
 </html>
